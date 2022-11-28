@@ -1,0 +1,203 @@
+/* Arquivo CSS geral com estilos dos elementos de todas paginas*/ 
+
+* {
+    box-sizing: border-box;
+  }/*Seletor universal que altera todos os elementos da pagina*/
+
+  html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  } /*seletor raiz html que abrange toda pagina*/
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  body {
+    background-color: white;
+  }
+
+  h1, h2, p, li { 
+    font-family: Arial, Helvetica, sans-serif;
+    color:#454545 ;
+  } /* Posso definir elementos usando virgulas*/
+
+  a {
+    color:rgb(153, 0, 255);
+    text-decoration: none;
+    }
+
+    #primeiro-link a {
+      color: red;
+    } /*Seletor ID para uso exclusivo e pode ser usado uma unica vez*/
+    
+    /*Seletor de classe serve para elementos semelhantes*/
+
+  /*ul {
+    background-color: yellow;;
+  }*/
+  .navegacao {
+    background-color: rgba(89, 0, 255, 0.432);
+  }                     /*exemplo de como usar o seletor class e so incluir o nome da classe onde desejar*/
+  .navegacao a {
+    color: rgb(153, 51, 51);
+  }
+  .titulos {
+    color: rgb(255, 0, 200);
+    margin-bottom: 1px;
+    font-size: 2rem;
+  }
+
+  /*form div {
+    background: #fff;
+    border: 0px;
+    border: 1px solid #33f;
+    /*
+    border-top: 1px solid #33f;
+    border-left: 1px solid #33f;
+    border-rigth: 1px solid #33f;
+    * /
+    margin: 1rem 1rem;
+    padding: 1rem;
+  }
+  */
+  label {
+    margin-bottom: 1px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #66f;
+  }
+
+[type="text"], [type="email"], textarea, label {
+  display: block;
+  width: 40%;
+}/*posso criar regras especificas para esses elementos*/
+
+
+  header {
+    background-color: #dddddd;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left; /* Definir posisao dos links / navegacao*/
+    width: 20%;
+    height:90%;
+    background: #ccc;
+    padding: 30px;
+  }
+
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  article {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    height:90%;
+    /* background-color: yellow; */
+  }
+
+  /* Clear floats after the columns */
+  section::after {
+    background: #ccc;
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .coluna { 
+  display: block;
+  width: 50%;
+  float: left;
+  padding: 5px;
+  /* background: #dddddd;
+  border: #333 solid 1px; */
+  }
+
+  .coluna-3 {
+    columns: 100px 2;
+    width: 50%;
+  }
+
+  .coluna-100w {
+    width: 100%;
+    
+  }
+  iframe {
+  width: 100%;
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    body {
+      background-color: teal;
+       color: #fff;
+    }
+    p, h3, li, a {
+      color: #fff;
+    }
+  }
+
+  @media (max-width:768px){
+
+    nav {
+      width: 30vm;
+    }
+
+    article {
+      width: 70vm;
+    }
+
+    .coluna{
+      width: 50vm;
+      min-width: unset;
+    }
+  }
+
+/* Mobile First */
+
+  @media (max-width:425px){
+
+    nav, 
+    article,
+    .coluna{
+      width: 100%;
+      min-width: 320px;
+    }
+  }
+  /*
+  Seletores
+- Raiz html {...}
+- Elemento body, p,a, div{...}
+- Universal *{...}
+- Identificador #id {...}
+- Classe .classe {...}
+- Atributo [type="text"] {...}
+*/
