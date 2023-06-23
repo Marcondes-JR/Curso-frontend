@@ -1,0 +1,46 @@
+{
+    //editor
+   "editor.wordWrap": "on",
+   //"editor.fontSize": 18,
+   //"editor.lineHeight": 30,
+   "editor.tabSize": 2,
+   "editor.bracketPairColorization.enabled": true,
+   "editor.guides.bracketPairs": true,
+   "editor.minimap.enabled": false,
+   "editor.formatOnSave": true,
+   "editor.formatOnPaste": true,
+   "fles.autoSave": "afterDelay",
+    //explorer
+   "explorer.compactFolders": false,
+    //workbench
+   "workbench.editor.enablePreview": false,
+   "workbench.iconTheme": "materialicontheme",
+   "workbench.colorTheme": "Omni",
+    //prettier
+   "editor.defaultFormatter": "esbenp.prettiervscode",
+   "prettier.enable": true,
+   "prettier.singleQuote": false,
+   "prettier.tabWidth": 2,
+   "prettier.semi": false,
+    //terminal
+   "terminal.integrated.fontSize": 16,
+   "terminal.integrated.profles.windows": {
+   "Git Bash": {
+   "source": "Git Bash"
+   }
+   },
+"terminal.integrated.defaultProfle.windows": "Git Bash",
+"[css]": {
+    "editor.defaultFormatter": "michelemelluso.code-beautifier"
+},
+"[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+},
+"[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+},
+"[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+}
+   }
+   
