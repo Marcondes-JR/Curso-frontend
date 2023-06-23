@@ -56,7 +56,7 @@
     /*
     border-top: 1px solid #33f;
     border-left: 1px solid #33f;
-    border-rigth: 1px solid #33f;
+    border-right: 1px solid #33f;
     * /
     margin: 1rem 1rem;
     padding: 1rem;
@@ -87,7 +87,7 @@
 
   /* Create two columns/boxes that floats next to each other */
   nav {
-    float: left; /* Definir posisao dos links / navegacao*/
+    float: left; /* Definir posição dos links / navegação*/
     width: 20%;
     height:90%;
     background: #ccc;
