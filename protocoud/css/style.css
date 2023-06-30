@@ -160,3 +160,5 @@ footer small {
   height: 300px !important;
   overflow: hidden;
 }
+
+/* precisa add @media (max-width:xxx) para deixar responsivo */
