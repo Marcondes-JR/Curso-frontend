@@ -65,7 +65,8 @@ p {
 
 img {
   max-width: 100%;
-  height: auto; /*Altura automática para nao distorcer*/
+  height: auto;
+  /*Altura automática para nao distorcer*/
 }
 
 ol {
@@ -124,7 +125,11 @@ display: block;
 
 padding:60px 2px 20px;
 }  */
-
+#tenho-interesse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 footer {
   background-color: #254159;
@@ -134,6 +139,7 @@ footer {
   padding: 20px;
   width: 100%;
 }
+
 
 footer p {
   color: #fff;
@@ -153,10 +159,11 @@ footer small {
   visibility: hidden !important;
 }
 
-.cog-header h1{
+.cog-header h1 {
   visibility: hidden !important;
-} 
-.cognito{
+}
+
+.cognito {
   height: 300px !important;
   overflow: hidden;
 }
