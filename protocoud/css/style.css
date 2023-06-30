@@ -65,7 +65,7 @@ p {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: auto; /*Altura automática para nao distorcer*/
 }
 
 ol {
@@ -119,6 +119,13 @@ section article {
   /* padding: 20px; */
 }
 
+/* #tenho-interesse{
+display: block;
+
+padding:60px 2px 20px;
+}  */
+
+
 footer {
   background-color: #254159;
   color: #fff;
@@ -136,4 +143,20 @@ footer p {
 footer small {
   font-size: 80%;
   display: block;
+}
+
+.cog-branding--minimal {
+  visibility: hidden !important;
+}
+
+.cog-abuse {
+  visibility: hidden !important;
+}
+
+.cog-header h1{
+  visibility: hidden !important;
+} 
+.cognito{
+  height: 300px !important;
+  overflow: hidden;
 }
