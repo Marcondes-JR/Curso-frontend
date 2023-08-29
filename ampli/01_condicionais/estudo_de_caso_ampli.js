@@ -23,3 +23,10 @@ for (i = hora; i < saida; i++) {
   }
 
 }
+
+function keyEvent (event){
+  var key = event.keyCode;
+  if (key == 105) {
+    alert("Voce apertou a tecla 9")
+  }
+}
