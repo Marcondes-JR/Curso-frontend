@@ -2,18 +2,26 @@ function buscarCEP() { //função requerida pelo botão no HTML
 
   // Entrada
   var entrada = document.getElementById('buscar_cep').value; //cria a var e armazena o valor digitado
+  //testar se a entrada é um cep
+  var tamanho = entrada.length;
+  console.log(tamanho);
+  if (tamanho > 8 || tamanho <= 7) {
+    alert("Informe os 8 números do cep BR");
+  } 
+  else {
 
-  //saida // variáveis criadas para retornar os valores para o HTML
-  // ao primeiro objeto com valor especificado para cada ID
-  var cep = document.getElementById('cep');
-  var logradouro = document.getElementById('logradouro');
-  var bairro = document.getElementById('bairro');
-  var cidade = document.getElementById('cidade');
-  var estado = document.getElementById('estado');
-  var ddd = document.getElementById('ddd');
-
-  //cria objeto xhr
-  var xhr = new XMLHttpRequest(); //usa o objeto XHR para consulta ajax
+    //saida
+    // variáveis criadas para retornar os valores para o HTML
+    // ao primeiro objeto com valor especificado para cada ID
+    var cep = document.getElementById('cep');
+    var logradouro = document.getElementById('logradouro');
+    var bairro = document.getElementById('bairro');
+    var cidade = document.getElementById('cidade');
+    var estado = document.getElementById('estado');
+    var ddd = document.getElementById('ddd');
+    
+    //cria objeto xhr
+    var xhr = new XMLHttpRequest(); //usa o objeto XHR para consulta ajax
   xhr.responseType = "json"; //informo o tipo de formato esperado
   //permite fazer consulta assíncrona com servidor remoto
   //envia requisição
@@ -38,4 +46,5 @@ function buscarCEP() { //função requerida pelo botão no HTML
       ddd.innerText = xhr.response.ddd;
     }
   }
+}
 }
