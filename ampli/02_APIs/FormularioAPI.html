@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>API</title>
 </head>
+
 <body>
   <!-- busca -->
-  <input type="text"  placeholder="Digite seu CEP aqui" id="buscar_cep" >
-  
+  <input type="text" placeholder="Digite seu CEP aqui" id="buscar_cep">
+
   <input type="button" onclick="buscarCEP()" value="Buscar">
 
   <!-- Local onde escrevemos o resultado -->
@@ -34,9 +36,14 @@
     <strong>Estado:</strong>
     <span id="estado"></span>
   </p>
-  
+  <p>
+    <strong>DDD:</strong>
+    <span id="ddd"></span>
+  </p>
+
   <!-- Chamada do Script-->
   <script src="scriptAPI.js"></script>
 
 </body>
+
 </html>
